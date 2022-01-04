@@ -1,0 +1,273 @@
+body {
+    position: fixed;
+    background-color: #f0efed;
+    color: darkslategray;
+    font-family: "Courier New", Courier, monospace;
+}
+	title {
+		color: darkslategray;
+	}
+
+	sidebar {
+		float: left;
+		position:fixed;
+		margin-left: -1%;
+		margin-top: -2%;
+		width : 20%;
+		height: 104%;
+		background-color: darkslategray;
+		padding: 0px;
+		word-wrap: break-word;
+
+	}
+
+	img#logo {
+		visibility:hidden;
+		position:fixed;
+		margin-left: 70%;
+		margin-top: 2%;
+	}
+	sidebarBox {
+		float: left;
+			width: 80%;
+		padding: 10%;
+	}
+	divider {
+        	float: left;
+		position: fixed;
+		margin-top: 10%;
+		margin-left: 30%;
+        	width: 43.5%;
+        	height: 2%;
+        	background-color: #76a383;
+		border-style: solid;
+
+		border-color: black;
+        	padding: 20px;
+		color: azure;
+      }
+
+	dividerInText {
+		float: left;
+        position: relative;
+        width: 100%;
+        height: 2%;
+    
+        padding: 20px;
+		font-size:large;
+		font-weight: bold;
+		
+	    color: black;
+		border-style: outset;
+	}
+
+mainText {
+    float:none;
+    position: fixed;
+    margin-left: 30%;
+    margin-top: 15%;
+    width: 50%;
+    word-wrap: break-word;
+    padding: 2%;
+    border: none;
+    color: black;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 70%;
+}
+
+
+.navbar {
+    position: fixed;
+    margin-top: 20%;
+    margin-left: 2%;
+    overflow: hidden;
+    background-color: #333;
+    visibility: hidden;
+    width: 92%;
+}
+
+    .navbar a {
+        float: left;
+        font-size: 16px;
+        color: white;
+        text-align: center;
+        padding: 14px 4%;
+        text-decoration: none;
+        visibility:hidden;
+    }
+
+        .navbar a:hover {
+            background-color: slategray;
+        }
+
+	nav {
+        float: left;
+        width: 65%;
+        height: 2%;
+        background-color: darkseaGreen;
+        padding: 20px;
+      }
+
+      
+      nav u1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      nav u1 li {
+        display: inline;
+      }
+
+	h1 {
+	  position: fixed;
+	  margin-left: 33%;
+		margin-top: 1%;
+	  width: 40%;
+	  float: left;
+	  height: 10%;
+	  font-size: 6vw;
+	  color: black;
+	}
+	.button, .innerButton {
+		background-color: #f0efed;
+		font-weight: 700;
+		font-variant: small-caps;
+		position: relative;
+		left: 20%;
+		border-style: outset;
+		border-colour: grey;
+		border-radius: 5px;
+        border-width: thick;
+  		color: black;
+		text-align: center;
+  		text-decoration: none;
+  		display: inline-block;
+		cursor: pointer;
+		margin: 4px 2px;
+	}
+	.button {
+		 padding: 10px 30px;	
+  		width: 110%;
+    		font-size: 1.5vw;
+	}
+	.innerButton {
+  	padding: 5px 15px;
+	width: 80%;
+	float: right;
+    	font-size: 1.3vw;
+}
+.hNavButton {
+    padding: 0px 0px;
+    width: 50%;
+    font-size: 1.5vw;
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+.button:hover, .innerButton:hover
+	{
+		transform: translateX(15%);
+		background-color: lightgray;
+		font-weight: 900;
+	}
+
+border.shadow {
+	border-style: outset;
+	border-width: 10%;
+}
+
+hline {
+	display: inline-block;
+	position:fixed;
+	margin-left: 1%;
+	margin-top: -2.5%;
+	width: 0.1%;
+	height: 100%;
+	background-color: #f0efed;	
+	padding: 5px;
+}
+sidetext {
+	position:relative;
+	left: 15%;
+	width: 9%;
+	color: white;
+	font-size:small;
+	word-wrap: break-word;
+}
+a {
+	color: red;
+}
+
+.message-area {
+    width: 100%;
+}
+
+
+@media (max-width: 500px) {
+    sidebar {
+        width: 0%;
+        height: 0%;
+        display: none;
+    }
+    mainText {
+        width: 90%;
+        margin-left: 0%;
+		margin-top: 30%;
+		height: 70%;
+    }
+	dividerInText{
+		font-size:normal;
+	}
+    .navbar{
+        visibility: visible;
+    }
+    .navbar a{
+        visibility: visible;
+    }
+}
+
+@media (max-width: 350px)
+{
+	.navbar a{
+		font-size: 11px;
+	}
+}
+
+@media (max-width: 800px)
+{
+	mainText{
+		height: 70%;
+		padding: 20px;
+	}
+	.button {
+	
+		padding: 7px 20px;
+	}
+	.innerButton {
+		padding: 5px 10px;
+	}
+}
+
+@media (max-height: 700px)
+{
+	sideText {
+		width: 0%;
+		height: 0%;
+		display: none;
+	}
+}
+
+@media (max-width: 470px ) {
+    .navbar a {
+        padding: 14px 10px;
+    }
+}
+@media (max-width: 460px )
+{
+    .navbar a {
+        padding: 14px 4px;
+    }
+}
