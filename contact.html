@@ -1,93 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <title>M.Ollerton CV</title>
+    <meta charset="UTF-8">
+    <link rel= "stylesheet" type = "text/css" href= "main.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Kyle Martin </title>
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 </head>
-
 <body>
-    <sidebar>
-        <img src="https://i.imgur.com/URuwHwW.jpg" alt="profilepic" width=100%>
-        <sidebarBox>
-            <hline>&nbsp</hline>
-            <button class="button" onclick='window.location.href="index.html"'> Home </button>
-            <button class="button" onclick="dropDownProjects()"> Experience </button>
-            <dropdown id="projectlist">
-            </dropdown>
-            <button class="button" onclick='window.location.href="contact.html"'> Contact </button>
-            <sidetext id="source"><br><br>Thank you for visiting my website. All pages on this site were created by me using CSS, HTML & JavaScript. The source code can be found <a href="">here</a>.</sidetext>
-        </sidebarBox>
-    </sidebar>
-    <h1 id="title"></h1>
-
-
-    <a href="https://www.linkedin.com/in/">
-        <img id="logo" alt="Qries" src="https://image.flaticon.com/icons/png/512/61/61109.png"
-             width=10%>
-    </a>
-
+    
     <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="/work.html">Internships</a>
-        <a href="contact.html">Contact</a>
-
-    </div>
-
-    <mainText>
-        <h2>Contact Me</h2>
-        <div id="contact">
-            Send me a message and I will get back to you as soon as possible. <br />
-            <br />
-            <div id="contact-form">
-                <form action="https://formspree.io/f/xoqrvpvd" method="POST">
-                    <input type="hidden" name="_subject" value="Contact request from personal website" />
-                    Email: <input type="email" name="_replyto" placeholder="Your email" required>
-                    <br /> <br />
-                    Message: <br />
-                    <textarea class ="message-area" name="message" placeholder="Type your message" required></textarea>
-                    <br />
-                    <button type="submit">Send</button>
-                </form>
-            </div>
+        <a href= "index.html"><b> About </b></a>
+        <a href = "workex.html"><b> Work Experience </b></a>
+        <a href = "projects.html"><b>Projects</b></a>
+        <a class="active" href = "contact.html"><b> Contact </b></a>    
         </div>
-    </mainText>
+    
+        <div class="title"><h1><b>Contact Me</b></h1></div>
+
+<mainText>
+    
+<div id="contact"> Send me a message and I will get back to you as soon as possible. <br />
+                <br />
+                <div id="contact-form">
+                    <form action="https://formspree.io/f/xoqrvpvd" method="POST">
+                        <input type="hidden" name="_subject" value="Contact request from personal website" />
+                        Email: <input type="email" name="_replyto" placeholder="Your email" required>
+                        <br /> <br />
+                        Message: <br />
+                        <textarea class ="message-area" name="message" placeholder="Type your message" required></textarea>
+                        <br />
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+</div>
+</mainText>
+
 </body>
-<script>
-	var projectsListed = false;
-	var output = "Kyle Martin.";
-
-	var i = 0;
-		 var interval = setInterval(function(){
-        document.getElementById('title').innerHTML += output.charAt(i);
-        i++;
-        if (i > output.length){
-		document.getElementById('logo').style.visibility = "visible";
-            clearInterval(interval);
-
-        }
-    }, 150);
-</script>
-<script>
-	function dropDownProjects()
-	{
-if (!projectsListed) {
-    document.getElementById('projectlist').innerHTML += "<button class='innerButton' onclick='window.location.href=\"projects.html\"'>Projects</button><button class='innerButton' onclick='window.location.href=\"work.html\"'>Internships</button>";
-	projectsListed = true;
-document.getElementById('source').style.visibility = "hidden";
-}
-else
-{
-	document.getElementById('projectlist').innerHTML = "";
-	projectsListed = false;
-	document.getElementById('source').style.visibility = "visible";
-}
-	}
-
-</script>
-
-
-
 </html>
